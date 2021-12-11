@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-botao',
@@ -12,4 +12,11 @@ export class BotaoComponent implements OnInit {
   ngOnInit() {
   }
 
+  @Input() num;
+
+  @Output() passaParaFuncao = new EventEmitter<any>();
+
+  passaParaCalculadora(){
+    this.passaParaFuncao.emit(this.num);
+  }
 }

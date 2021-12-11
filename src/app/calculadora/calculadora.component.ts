@@ -12,4 +12,14 @@ export class CalculadoraComponent implements OnInit {
   ngOnInit() {
   }
 
+  concatenacao = ""
+
+  passaParaCalculadora(evento){
+    this.concatenacao += evento;
+    console.log(this.concatenacao);
+  }
+
+  calculando(){
+    this.concatenacao = eval(this.concatenacao);
+  }
 }

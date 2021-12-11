@@ -1,6 +1,11 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 .linha {
     padding: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }

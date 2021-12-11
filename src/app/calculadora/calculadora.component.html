@@ -1,33 +1,33 @@
 <div class="calculadora">
-    <app-visor></app-visor>
+    <app-visor [recebendoValor]="concatenacao"></app-visor>
 
     <app-linha>
-        <app-botao></app-botao>
-        <app-botao></app-botao>
-        <app-botao></app-botao>
-        <app-botao></app-botao>
+        <app-botao [num]="'1'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
+        <app-botao [num]="'2'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
+        <app-botao [num]="'3'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
     </app-linha>
 
     <app-linha>
-        <app-botao></app-botao>
-        <app-botao></app-botao>
-        <app-botao></app-botao>
-        <app-botao></app-botao>
+        <app-botao [num]="'4'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
+        <app-botao [num]="'5'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
+        <app-botao [num]="'6'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
     </app-linha>
 
     <app-linha>
-        <app-botao></app-botao>
-        <app-botao></app-botao>
+        <app-botao [num]="'7'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
+        <app-botao [num]="'8'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
+        <app-botao [num]="'9'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
     </app-linha>
 
     <app-linha>
-        <app-botao></app-botao>
-        <app-botao></app-botao>
-        <app-botao></app-botao>
-        <app-botao></app-botao>
+        <app-botao [num]="'0'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
+        <app-botao [num]="'+'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
+        <app-botao [num]="'-'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
     </app-linha>
 
     <app-linha>
-        <app-botao></app-botao>
+        <app-botao [num]="'*'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
+        <app-botao [num]="'/'" (passaParaFuncao)="passaParaCalculadora($event)"></app-botao>
+        <app-botao [num]="'='" (click)="calculando()"></app-botao>
     </app-linha>
 </div>

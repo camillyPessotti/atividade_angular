@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-visor',
@@ -12,4 +12,5 @@ export class VisorComponent implements OnInit {
   ngOnInit() {
   }
 
+  @Input() recebendoValor = "";
 }
